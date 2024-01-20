@@ -13,10 +13,11 @@ public class GoogleBillboard {
 
 
   public static boolean isPrime(double dNum) {
-  if (dNum < 2)
-    return false;
-  for (int i = 2; i <= Math.sqrt(dNum); i++)
-    if (dNum % i == 0)
+    if (dNum < 2)
       return false;
-  return true;
+    for (int i = 2; i <= Math.sqrt(dNum); i++)
+      if (dNum % i == 0)
+        return false;
+    return true;
+  }
 }
